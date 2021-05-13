@@ -37,6 +37,16 @@ export default function App() {
       },
     }
   )
+  /* You need to use the `AppContext.Provider` at the
+  top of your app and pass the `global` value above */
+  return (
+      <AppContext.Provider value={global}>
+        ...
+        Your app
+        ...
+      </AppContext.Provider>
+  ) 
+}
 ```
 
 #### How to consume it
