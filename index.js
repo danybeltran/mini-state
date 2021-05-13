@@ -40,7 +40,7 @@ function useAppReducer(state, optionalActions) {
     function em(event, cb) {
         if (event === void 0) { event = ""; }
         if (_global.app.events[event]) {
-            _global.app.events[event]();
+            _global.app.events[event](state2);
         }
         else {
             console.error("No listener(s) for '" + event + "' event");
@@ -49,7 +49,7 @@ function useAppReducer(state, optionalActions) {
     }
     function on(eventName, callback) {
         if (eventName === void 0) { eventName = ""; }
-        _global.app.events[eventName] = function () { return callback(state2); };
+        _global.app.events[eventName] = function (st) { return callback(st); };
         return undefined;
     }
     var dispatchers = {};
