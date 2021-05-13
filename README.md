@@ -11,7 +11,7 @@ Take the example below
 ```jsx
 // App.js
 
-import { useAppReducer, AppContext } from "./miniState";
+import { useAppReducer, AppContext } from "react-mini-state";
 
 export default function App() {
   const global = useAppReducer(
