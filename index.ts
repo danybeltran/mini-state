@@ -46,7 +46,7 @@ export function useAppReducer<T>(state: T, optionalActions?: {}) {
   const [state2, emit] = useReducer(reduce<T>(), state);
   function em(event = "", cb: (st: T) => T) {
     if (_global.app.events[event]) {
-      _global.app.events[event]();
+      _global.app.events[event](state2);
     } else {
       console.error(`No listener(s) for '${event}' event`);
     }
@@ -54,7 +54,7 @@ export function useAppReducer<T>(state: T, optionalActions?: {}) {
   }
 
   function on(eventName = "", callback: (st: T) => {}) {
-    _global.app.events[eventName] = () => callback(state2);
+    _global.app.events[eventName] = (st) => callback(st);
     return undefined;
   }
 
