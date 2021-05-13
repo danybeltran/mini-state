@@ -1,5 +1,5 @@
 {
-  "name": "mini-state",
+  "name": "react-mini-state",
   "version": "1.0.0",
   "description": "Mini state managment library for React",
   "main": "index.js",
