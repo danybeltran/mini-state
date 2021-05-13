@@ -1,0 +1,16 @@
+{
+  "name": "mini-state",
+  "version": "1.0.0",
+  "description": "Mini state managment library for React",
+  "main": "index.js",
+  "keywords": [
+    "state management",
+    "react",
+    "react state management"
+  ],
+  "author": "Dany Beltran",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^17.0.5"
+  }
+}
