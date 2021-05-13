@@ -1,6 +1,6 @@
 {
   "name": "react-mini-state",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Mini state managment library for React",
   "main": "index.js",
   "keywords": [

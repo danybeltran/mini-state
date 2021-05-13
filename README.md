@@ -88,7 +88,7 @@ Using the example above:
 And trigger a callback when that specific event is triggered
 ```jsx
 useEffect(()=>{
-  global.on("reset", () => console.log("Count was reset")
+  global.on("reset", () => console.log("Count was reset"))
 },[])
 ```
 
